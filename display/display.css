@@ -1,0 +1,63 @@
+@import url('../reset.css');
+@import url('../main.css');
+
+.block-element{
+    display: block;
+    background-color: var(--element-color);
+}
+
+.block-element:not(:last-child){
+    margin-bottom: 5px;
+}
+
+.block-element.height-set{
+    height: 100px;
+}
+
+.block-element.height-set.width-set{
+    height: 100px;
+    width: 80px;
+}
+
+.inline-element{
+    display: inline;
+    background-color: var(--element-color);
+    margin: 2px;
+}
+
+.inline-element:not(:last-child){
+    margin-bottom: 5px;
+}
+
+.inline-element.height-set{
+    height: 100px;
+}
+
+.inline-element.height-set.width-set{
+    height: 100px;
+    width: 80px;
+}
+
+.inline-block-element{
+    display: inline-block;
+    background-color: var(--element-color);
+}
+
+.inline-block-element:not(:last-child){
+    margin-bottom: 5px;
+}
+
+.inline-block-element.height-set{
+    height: 100px;
+}
+
+.inline-block-element.height-set.width-set{
+    height: 100px;
+    width: 80px;
+}
+
+.basic-container{
+    width: 100%;
+    height: 500px;
+    background-color: var(--basic-container-color);
+} 

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="sizing.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <span><a href="../index.html">Inicial</a> </span>
+        <span><a href="../display/display.html">Display</a></span>
+        <span><a href="#">Sizing</a></span>
+        <span><a href="../overflow/overflow.html">Overflow</a></span>
+        <span><a href="../position/position.html">Position</a></span>
+    </header>
+    <main>
+        <div class="basic-container">
+            <div class="element" style="height: 100px; width:100px">
+                size in pixels
+            </div>
+
+            <div class="element" style="height: 3cm; width: 5cm;">
+                size in centimeters
+            </div>
+        </div>
+
+        <hr class="dashed">
+
+        <div class="basic-container" style="overflow: auto;">
+            <div class="element" style="height: 5em; width:10em">
+                em sizing - default font size
+            </div>
+
+            <div class="element" style="font-size: 30px; height: 5em; width:10em">
+                em sizing - 30px font size
+            </div>
+
+            <div class="element" style="height: 10vw; width: 20vh;">
+                vh and vw sizing - height = 5vw e width = 10vh
+            </div>
+
+            <div class="element" style="height: 10%; width: 20%;">
+                % sizing
+            </div>
+        </div>
+    </main>
+</body>
+</html>

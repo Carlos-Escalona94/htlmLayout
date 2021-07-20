@@ -1,0 +1,42 @@
+@import url('./reset.css');
+@import url('./main.css');
+
+#margin-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsl(0, 0%, 90%);
+
+}
+
+#margin-box .box{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: calc(100% - 80px);
+    height: calc(100% - 80px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#border-box{
+    background-color: hsl(135, 50%, 60%);
+}
+
+#padding-box{
+    background-color: hsl(0, 0%, 90%);
+}
+
+#content-box{
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+}
+
+
+

@@ -1,0 +1,42 @@
+:root {
+    --element-color: rgb(236, 235, 156);
+    --basic-container-color: aliceblue;
+    --header-fix-height: 60px;
+    
+    height: 100%;
+    width: 100%;
+}
+
+
+body{
+    display: block;
+    height: 100%;
+}
+
+body  header:first-of-type{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+    background-color: hsl(135, 50%, 50%);
+    height: var(--header-fix-height);
+    padding: 0px 10px;
+
+}
+
+body  header:first-of-type > span{
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+    width: auto;
+    height: 30px;
+}
+
+body  header:first-of-type > span:hover{
+    background-color: hsla(0, 100%, 100%, 20%);
+}
+
+main{
+    background-color: hsl(0, 0%, 100%);
+    height: calc(100% - var(--header-fix-height));
+}
