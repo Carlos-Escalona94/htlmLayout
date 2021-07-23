@@ -25,7 +25,9 @@ body  header:first-of-type{
 }
 
 body  header:first-of-type > span{
-    display: inline-block;
+    display: flex;
+    justify-content: start;
+    align-items: center;
     padding: 5px 10px;
     border-radius: 4px;
     width: auto;

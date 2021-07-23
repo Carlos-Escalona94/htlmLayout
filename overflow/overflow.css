@@ -6,7 +6,7 @@ main{
     display: grid;
     gap: 15px;
     grid-auto-rows: min-content;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 365px), 1fr));
+    grid-template-columns: repeat(auto-fill, 600px);
 }
 
 .container{

@@ -1,0 +1,63 @@
+@import url('../reset.css');
+@import url('../main.css');
+
+main{
+    --container-width: 90%; /*auto*/
+    --container-height: 300px; /*500px*/
+
+    --flex-direction: row; /*column row-reverse column*/
+    --flex-wrap: wrap; /*wrap wrap-reverse*/
+    --justify-content: flex-start; /*flex-end space-between space-around*/
+    --align-items: flex-start;  /*stretch flex-start flex-end base-line center*/
+    --align-content: space-between; /*flex-start flex-end center stretch space-between space-around    only for multiline flex*/
+
+    --element-width: auto;
+    --element-height: auto;
+
+    --flex: 0 1 auto; /*default: 0 1 auto*/
+
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: var(--container-width);
+    height: var(--container-height);
+
+
+    display: flex;
+    
+    flex-direction: var(--flex-direction);
+    flex-wrap: var(--flex-wrap);
+    justify-content: var(--justify-content);
+    align-items: var(--align-items);
+    align-content: var(--align-content);
+    
+    outline: blue solid 5px;
+    background-color: red;
+}
+
+.element{
+    width: var(--element-width);
+    height: var(--element-height);
+    flex: var(--flex);
+
+    border: green solid 5px;
+    background-color: yellow;
+}
+
+.container .element:first-of-type{
+    /* flex: 0 1 auto; */
+    height: 100px;
+}
+
+/* .container .element:first-of-type{
+    order: 2;
+} */
+
+/* .container .element:last-of-type{
+    margin-left: auto;
+} */
