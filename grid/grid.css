@@ -2,12 +2,71 @@
 @import url('../main.css');
 
 main{
+    --grid-template-columns: repeat(12, 1fr); /* [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end]*/
+    --grid-template-rows: 40px 100px, 40px;
+    --column-gap: 0;
+    --row-gap: 0;
+    --justify-items: stretch; /*start end center stretch*/
+    --align-items: stretch; /*start end center stretch*/
+    --justify-content: start; /* end | center | stretch | space-around | space-between | space-evenly*/
+    --align-content: start; /* end | center | stretch | space-around | space-between | space-evenly*/
 
+    --grid-template-areas: 
+        "";
+
+    --grid-auto-flow: row; /*row | column | row dense | column dense*/
+
+
+    --element-width: auto; /*150px */
+    --element-height: auto; /*150px */
+    --justify-self: stretch; /*start end center stretch*/
+
+
+
+
+    display: grid;
+    grid-template-columns: var(--grid-template-columns);
+    grid-template-rows: var(--grid-template-rows);
+    column-gap: var(--column-gap);
+    row-gap: var(--row-gap);
+    grid-auto-flow: var(--grid-auto-flow);
+
+    /* grid-template-areas: var(--grid-template-areas); */
+
+    /* grid-auto-columns: ; */
+    /* grid-auto-rows: ; */
+
+    /* grid: */
 }
 
 .element{
-    width: 150px;
-    height: 150px;
-    outline: black solid 1px;
+    width: var(--element-width);
+    height: var(--element-height);
+
+    border: black solid 1px;
     background-color: var(--element-color);
+}
+
+.header{
+    grid-column: span 12;
+    /* grid-area: ; */
+}
+
+.menu{
+    grid-column: span 4;
+    /* grid-area: ; */
+}
+
+.content{
+    grid-column: span 8;
+    /* grid-area: ; */
+}
+
+.footer{
+    grid-column: span 12;
+    /* grid-area: ; */
+}
+
+.no-initial{
+    display: none;
 }
