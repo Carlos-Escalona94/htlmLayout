@@ -3,13 +3,13 @@
 
 main{
     --container-width: 90%; /*auto*/
-    --container-height: 300px; /*500px*/
+    --container-height: auto; /*500px*/
 
     --flex-direction: row; /*column row-reverse column*/
     --flex-wrap: wrap; /*wrap wrap-reverse*/
     --justify-content: flex-start; /*flex-end space-between space-around*/
-    --align-items: flex-start;  /*stretch flex-start flex-end base-line center*/
-    --align-content: space-between; /*flex-start flex-end center stretch space-between space-around    only for multiline flex*/
+    --align-items: stretch;  /*stretch flex-start flex-end base-line center*/
+    --align-content: flex-start; /*flex-start flex-end center stretch space-between space-around    only for multiline flex*/
 
     --element-width: auto;
     --element-height: auto;
@@ -49,10 +49,10 @@ main{
     background-color: yellow;
 }
 
-.container .element:first-of-type{
-    /* flex: 0 1 auto; */
+/* .container .element:first-of-type{
+    flex: 0 1 auto;
     height: 100px;
-}
+} */
 
 /* .container .element:first-of-type{
     order: 2;
